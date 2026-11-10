@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827"><title>ULTIMATE ROLEPLAY — BY RAMA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div><small>BY RAMA PRESENTS</small><h1>🏙️ ULTIMATE ROLEPLAY</h1><p>Open World Life Simulation RPG</p></div><div class="clock" id="clock">Hari 1 · 08:00</div></header>
+<main>
+<section class="hero"><div><span class="pill">TEXT ROLEPLAY • OPEN WORLD</span><h2>Bangun kehidupanmu sendiri.</h2><p>Jelajahi kota, cari pekerjaan, kumpulkan uang, berteman, dan kembangkan duniamu.</p></div></section>
+<section id="setup" class="panel">
+<h2>👤 Buat Karakter</h2><div class="grid">
+<label>Nama karakter<input id="charName" maxlength="24" placeholder="Contoh: Rama"></label>
+<label>Umur<input id="charAge" type="number" min="13" max="90" value="18"></label>
+<label>Tempat lahir<input id="birth" maxlength="30" value="Ungaran"></label>
+<label>Kepribadian<select id="personality"><option>Ramah</option><option>Pemberani</option><option>Tenang</option><option>Kreatif</option></select></label>
+</div><button id="createBtn">Mulai Petualangan</button>
+</section>
+<section id="game" class="hidden">
+<div class="stats" id="stats"></div>
+<nav id="nav">
+<button data-tab="world">🌆 Kota</button><button data-tab="profile">👤 Profil</button><button data-tab="work">💼 Kerja</button><button data-tab="inventory">🎒 Tas</button><button data-tab="social">👥 Sosial</button><button data-tab="quests">📜 Quest</button><button data-tab="mods">🧩 Mod Manager</button><button data-tab="saves">💾 Save</button>
+</nav>
+<section class="panel" id="view"></section>
+<section class="panel"><h3>📖 Catatan Petualangan</h3><div id="log" class="log"></div></section>
+</section>
+</main>
+<footer>ULTIMATE ROLEPLAY v1.0.0 · Dibuat dengan ❤️ oleh BY RAMA</footer>
+<script src="js/game.js"></script><script src="js/mods.js"></script><script src="js/app.js"></script>
+</body></html>
